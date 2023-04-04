@@ -4,7 +4,8 @@ import Lottie from "lottie-react";
 import img from '../../images/112233-book-icon.gif'
 const Header = () => {
     return (
-        <div className='w-[80%] mx-auto py-5 flex justify-between items-center'>
+       <div className='bg-slate-100 sticky top-0 z-10 '>
+         <div className='w-[80%] mx-auto py-5   px-5 flex justify-between items-center'>
             <div className='flex gap-2'>
             <img className='w-8 h-8' src={img} alt="" />
             <h1 className='text-xl font-semibold'>BookStall</h1>
@@ -42,7 +43,8 @@ const Header = () => {
 </NavLink>
             </div>
         </div>
-    );
+
+       </div>    );
 };
 
 export default Header;
